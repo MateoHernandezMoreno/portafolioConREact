@@ -1,0 +1,95 @@
+@use '../base/mixins' as m;
+@use '../base/variables' as v;
+
+.about{
+    margin: 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column ;
+    gap: 2rem;
+    background-color: v.$second-bg-color;
+    width: 100%;
+    padding: 3rem;
+}
+
+.heading{
+    font-size: 5rem;
+    margin-bottom: 3rem;
+    font-weight : 500;
+    text-align: center;
+    color: white;
+}
+span{
+    color: v.$main-color;
+}
+.abuot-img{
+    position: relative;
+    height: 25rem;
+    width: 25rem;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & img{
+        background-color: v.$grisOscuro;
+        width: 90%;
+        border-radius: 50%;
+        border: 2px solid v.$main-color;
+    }
+
+    & .circle-spin{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(0);
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+        border-top: 2px solid v.$bg-color ;
+        border-left: 2px solid v.$main-color ;
+        border-right: 2px solid v.$main-color ;
+        border-bottom: 2px solid v.$bg-color ;
+        animation: aboutSpinner 8s linear infinite;
+    }
+}
+
+.about-content{
+    & h3{
+        font-size: 3rem;
+        font-weight: 400 ;
+        color: white;
+    }
+    & p{
+        font-size: 2rem;
+        margin: 2rem 0 3rem;
+        background: transparent;
+        border: none;
+        width: 50%;
+        margin-left: 22%;
+
+    }
+}
+
+.btn-box{
+    & .btns{
+        display: inline-block;
+        width: 15rem;
+        & a::before{
+            background: v.$second-bg-color;
+        }
+    }
+}
+
+@keyframes aboutSpinner{
+    100%{
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+.btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 35%;
+}

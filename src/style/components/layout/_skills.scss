@@ -1,0 +1,49 @@
+@use '../base/mixins' as m;
+@use '../base/variables' as v;
+
+.skills{
+    min-height: auto;
+    padding-bottom: 7rem;
+    background-color: v.$second-bg-color;
+        & .skills-column{
+            padding: 4rem;
+            flex: 1 1 40rem;
+            & .tittle{
+                font-size: 2.5rem;
+                margin:  0 0 1.5rem;
+                color: white;
+            }
+        }
+        & .skills-content{
+            display: flex;
+            justify-content: center;
+            margin: 4rem -3rem;
+            & .progress{
+                width: 22rem; 
+                margin-left: 5%;
+                height: 5rem;
+                background: transparent;
+                & img{
+                    width: 6rem;
+                }
+            }
+        }
+    }
+
+    /* HTML: <div class="loader"></div> */
+.loader {
+    width: 50px;
+    aspect-ratio: 1;
+    color: #2c6d9f;
+    border: 2px solid;
+    box-sizing: border-box;
+    border-radius: 50%;
+    --c:radial-gradient(farthest-side,#e9dddd00 calc(100% - 3px),currentColor calc(100% - 2px) 98%,#a6959500);
+    background: var(--c),var(--c);
+    background-size: 23px 23px;
+    background-position: 0 0,12px 12px;
+    animation: l4 1s infinite;
+  }
+  @keyframes l4{
+    100% {background-position: -23px 0px,12px 35px}
+  }

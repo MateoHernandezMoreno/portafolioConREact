@@ -1,0 +1,170 @@
+@use '../base/mixins' as m;
+@use '../base/variables' as v;
+
+.home{
+    padding: 1rem;
+    min-height: 70vh;
+    padding: 9rem 3% 2rem;
+    min-width: 38rem;
+    background-color: v.$bg-color;
+    & .home{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 9%;
+    }
+    & .home-content{
+        max-width: 60rem;
+        & h1{
+            font-size: 5.6rem;
+            font-weight: 700;
+            line-height: 1.3;
+            padding: 4rem;
+            color: aliceblue;
+            & span{
+                color: v.$main-color;
+            }
+        }
+        & p{
+            font-size: 2.6rem;
+            margin: 2rem 0 4rem;
+            background: transparent;
+            border: none;
+        }
+    }
+    & .text-animate{
+        & h3{
+            // margin-left: -26rem;
+            font-size: 3.2 rem;
+            font-weight: 700;
+            color: transparent;
+            -webkit-text-stroke: .7px v.$main-color;
+            background-image: linear-gradient(v.$main-color, v.$main-color );
+            background-repeat: no-repeat;
+            background-clip: text;
+            background-position:  0 0;
+            animation: homeBgText 6s linear infinite;
+            animation-delay: 2s;
+            &::before{
+                content: ' ';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 0;
+                height: 100%;
+                border-right: 2px solid v.$main-color;
+                z-index: -1;
+
+            }
+        }
+    } 
+}
+
+.btn-box{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 34rem;
+    height: 5rem;
+    & a:hover{
+        color: v.$text-color;
+    }
+    & .btn{
+        position: relative;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 15rem;
+        height: 100% ;
+        background-color: v.$main-color;
+        border: .2rem solid v.$main-color;
+        border-radius: .8rem;
+        font-size: 1.8rem;
+        font-weight: 600;
+        letter-spacing: .1rem;
+        color: v.$bg-color;
+        z-index: 1;
+        overflow: hidden;
+        transition: all .5s ease;
+        cursor: pointer;
+        &::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            background-color: v.$bg-color;
+            z-index: -1;
+            transition: all .5s ease;
+        }
+        &:hover::before{
+            width: 100%;
+    }
+}
+}
+.home-sci{
+    margin-top: 3rem;
+    display: flex;
+}
+@media screen and (max-width:600px) {
+    .home-sci{
+        left: 0;
+        margin-bottom: -32%;
+        position: relative;
+    }
+}
+.home-sci{
+    position: relative;
+    display: flex;
+    bottom: -28%;
+    margin: 1rem;
+    margin: 3rem 1rem;
+    & a{
+        position: relative;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 6rem;
+        height: 50px;
+        background: transparent;
+        border: .2rem solid v.$main-color;
+        border-radius: 50%;
+        margin: 2rem;
+        font-size: 20px;
+        color: v.$main-color;
+        z-index: 1;
+        transition: .5s;
+        &::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            z-index: -1;
+            transition: .5s;
+            border-radius: 50%;
+        }
+        &:hover{
+            background-color: v.$main-color;
+        }
+        & img{
+            margin: 0rem;
+        }
+    }
+}
+//  text animation
+
+@keyframes homeBgText{
+    0%,
+    10%,
+    100%{
+        background-position: -52rem 0;
+    }
+    65%,
+    85%{
+        background-position: 0 0;
+    }
+}
+

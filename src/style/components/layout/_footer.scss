@@ -1,0 +1,34 @@
+@use '../base/mixins' as m;
+@use '../base/variables' as v;
+.footer{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    //flex-wrap: wrap;
+    padding: 2rem 9%;
+    background: v.$second-bg-color;
+    & .footer-text p{
+         font-size: 1.6rem;
+         background: transparent;
+         border: none;
+
+    }
+
+}
+.footer-iconTop{
+    position: relative;
+    & a{
+        position: relative;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        padding: .8rem;
+        background: v.$main-color;
+        border: .2rem solid v.$main-color;
+        border-radius: .6rem;
+        & sgv{
+            font-size: 2.4rem;
+            color: v.$bg-color;
+        }
+    }
+}
