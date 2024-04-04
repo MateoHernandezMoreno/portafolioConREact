@@ -66,7 +66,7 @@ const Skill = () => {
                     </svg>
                     </div>
                     <div className="progress">
-                    <img src={ Icono2 }/>
+                    <img src={ Icono2 } alt=''/>
                     
                     </div>
                 </div>

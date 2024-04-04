@@ -40,9 +40,9 @@ const Education = () => {
           <div className="content">
             <div className="year">
               <section className="card">
-                <a href="https://foodvegan.netlify.app" target="_blank">
+                <a href="https://foodvegan.netlify.app" target="_blank" rel='noreferrer'>
                   <div className="background">
-                    <img src={ Vf } />
+                    <img src={ Vf } alt='' />
                   </div>
                   <div className="content2">
                     <h2>
@@ -62,9 +62,9 @@ const Education = () => {
           <div className="content">
             <div className="year">
               <section className="card">
-                <a href="https://cafesperanza.netlify.app" target="_blank">
+                <a href="https://cafesperanza.netlify.app" rel='noreferrer' target="_blank">
                   <div className="background">
-                    <img src={ Coffee } />
+                    <img src={ Coffee } alt='' />
                   </div>
                   <div className="content">
                     <h2>Blog de Cafe</h2>
