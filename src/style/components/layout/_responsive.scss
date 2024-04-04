@@ -71,10 +71,7 @@
      }
     .navbar{
          position: absolute;
-
          padding: 1rem 4%;
-         background-color: v.$second-bg-color;
-         box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2); 
          transition-delay: .25s;
          transition: .25s ease;
          & a{
@@ -90,11 +87,17 @@
             margin: .2rem 0rem;
            margin-left: 5%;
         }
+        .footer{
+            flex-direction: column;
+        }
 
 }
 
 @media(max-width: 414px){
     section{
         padding: 10rem 7% 1rem;
+    }
+    .footer{
+        flex-direction: column;
     }
 }
