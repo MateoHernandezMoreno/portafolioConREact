@@ -64,7 +64,7 @@ const Contact = () => {
                     <span className="focus" />
                     </div>
                     <div className="btn-box btns">
-                    <button type="submit" hover="#ededed" className="btn">
+                    <button type="submit" className="btn">
                         Submit
                     </button>
                     </div>
