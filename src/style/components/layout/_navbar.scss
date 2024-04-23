@@ -41,8 +41,7 @@
         background: v.$bg-color;
         display: flex;
         flex-direction: column;
-        width: 100%;
-        height: -webkit-fill-available;        
+        width: 100%;       
         transform: translateX(-100%);
         transition: 0.3s ease all;
         z-index: 999;
