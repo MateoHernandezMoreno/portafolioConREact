@@ -45,6 +45,8 @@
         transform: translateX(-100%);
         transition: 0.3s ease all;
         z-index: 999;
+        border-radius: 8px;
+        
     }
     .nav_items.open{
         transform: translateX(0) !important;
