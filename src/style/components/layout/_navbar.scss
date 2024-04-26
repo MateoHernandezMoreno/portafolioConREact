@@ -38,14 +38,17 @@
        position: absolute;
         top: 60px;
         left: 0;
-        background: v.$bg-color;
+        background: v.$second-bg-color;
         display: flex;
         flex-direction: column;
-        width: 100%;
-        height: -webkit-fill-available;        
+        width: 100%;       
         transform: translateX(-100%);
         transition: 0.3s ease all;
         z-index: 999;
+        opacity: .9;
+        border-radius: 0px 0px 8px 8px;
+        box-shadow: 0 1rem 1rem rgba(255, 255, 255, 0.382);
+
     }
     .nav_items.open{
         transform: translateX(0) !important;
