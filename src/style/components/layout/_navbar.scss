@@ -20,8 +20,9 @@
     color: rgb(245, 239, 239);
     position: relative;
     text-decoration: none;
-    // background-color: red;
-    // padding:  3rem 0;
+    &:hover{
+        color: aqua;
+    }
 }
 .nav_toggle{
     display: none;

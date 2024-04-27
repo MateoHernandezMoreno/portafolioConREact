@@ -23,10 +23,10 @@ const Education = () => {
               <p className="date">2019 - 2020</p>
               <h3>Forntend Web Developer - Udemy</h3>
               <p>
-                En el curso aprendí HTML, CSS3, JavaScript, SASS de la mano de
-                los mentores expertos en desarrollo web y aplicaciones
-                empresariales con mas de 20 años de experiencia laboral y mas de
-                10 años enseñando online.
+              In the course I learned HTML, CSS3, JavaScript, SASS from the hand of
+                expert mentors in web and application development
+                entrepreneurs with more than 20 years of work experience and more than
+                10 years teaching online.
               </p>
             </div>
           </div>

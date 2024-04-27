@@ -19,13 +19,12 @@ const Aboutme = () => {
                 <div className="about-content">
                     <h3>Fontend Developer</h3>
                     <p>
-                    Soy una persona responsable, puntual, proactiva y respetuosa, con
-                    capacidad para adaptarme a las situaciones que se puedan generar, me gusta
-                    trabajar en equipo y aprender cada dia mas.
+                    I am a responsible, punctual, 
+                    proactive and respectful person, 
+                    with the ability to adapt to situations 
+                    that may arise, I like to work as a 
+                    team and learn more every day.
                     </p>
-                    {/* <div class="btn-box btns">
-                        <a href="#" class="btn">Read More</a>
-                    </div> */}
                 </div>
             </section>
 
