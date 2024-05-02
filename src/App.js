@@ -27,7 +27,7 @@ function App(){
                 {/* <Butonfloat></Butonfloat> */}
                 <Footer></Footer>
                 {showButton && 
-                <button style={{position: 'fixed', bottom: '20px', right: '20px', background: 'transparent', border: 'none' }}>
+                <button style={{position: 'fixed', bottom: '10px', right: '2px', background: 'transparent', border: 'none' }}>
                     <div className="footer-iconTop">
                         <a href="#home">
                             <svg
