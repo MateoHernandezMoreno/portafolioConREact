@@ -1,6 +1,7 @@
 import React from 'react';
 //import Icono from '../../resources/profile/logos/icons8-reaccionar-40.svg';
 import Icono2 from '../../resources/profile/logos/react-removebg-preview.png';
+import python from '../../resources/profile/logos/python-logo-24.png';
 
 
 const Skill = () => {
@@ -69,9 +70,11 @@ const Skill = () => {
                     <img src={ Icono2 } alt=''/>
                     
                     </div>
+                    <div className='progress'>
+                    <img src={ python } alt=''/>
+                    </div>
                 </div>
-                </section>
-
+            </section>
         </div>
     );
 }

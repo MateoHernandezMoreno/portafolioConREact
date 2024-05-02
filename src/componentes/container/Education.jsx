@@ -1,5 +1,5 @@
 import React from 'react';
-import Vf from '../../resources/profile/logos/VF.png';
+import Vf from '../../resources//profile/logos/VF.png';
 import Coffee from '../../resources/profile/logos/coffee-cup.png';
 
 const Education = () => {
