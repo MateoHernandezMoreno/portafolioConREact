@@ -18,3 +18,8 @@
         @content;
     }
 }
+@mixin desktopXL {
+    @media (max-width: #{v.$desktopXL}) {
+        @content;
+    }
+}

@@ -1,4 +1,5 @@
 import React from 'react';
+import profile from '../../resources/profile/profile-removebg-preview-removebg-preview.png';
 
 const Home = () => {
     return (
@@ -23,6 +24,11 @@ const Home = () => {
                         <a href="https://wa.me/573173231051" target="_blank" rel='noreferrer' class="btn">Let's talk </a>
                     </div>
                 </div>
+                <article className='picture'>
+                    <div>
+                        <img src={ profile } alt="" />
+                    </div>
+                </article>
 
                 <div className="home-sci">
 

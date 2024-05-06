@@ -117,6 +117,29 @@
         position: relative;
     }
 }
+
+.picture{
+    @include m.desktop{
+        display: none;
+    }
+    max-width: 50rem;
+  justify-content: center;
+  display: flex;
+  position: absolute;
+  right: 25vh;
+  top: 24vh;
+  & div{
+    & img{
+        border-radius: 50%;
+        opacity: .3;
+        
+        &:hover{
+            opacity: 1;
+        }
+
+    }
+  }
+}
 .home-sci{
     position: relative;
     display: flex;
@@ -170,4 +193,6 @@
         background-position: 0 0;
     }
 }
+
+
 

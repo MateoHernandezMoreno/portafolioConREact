@@ -50,9 +50,9 @@ const Education = () => {
                     </h2>
                     <ul className="clips">
                       <li className="clip">HTML</li>
-                      <li className="clip">SASS</li>
+                      <li className="clip">CSS</li>
                       <li className="clip">JS</li>
-                      <li className="clip">SQL</li>
+                      <li className="clip">PHP</li>
                     </ul>
                   </div>
                 </a>
