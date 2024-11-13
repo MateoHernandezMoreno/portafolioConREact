@@ -21,7 +21,7 @@ const Home = () => {
                     </p>
                     <div className="btn-box">
                         <a href="#contact" className="btn">Hire me</a>
-                        <a href="https://wa.me/573173231051" target="_blank" rel='noreferrer' class="btn">Let's talk </a>
+                        <a href="https://wa.me/573137347667" target="_blank" rel='noreferrer' class="btn">Let's talk </a>
                     </div>
                 </div>
                 <article className='picture'>
