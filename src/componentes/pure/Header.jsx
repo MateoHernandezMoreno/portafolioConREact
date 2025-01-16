@@ -4,7 +4,7 @@ const Header = () => {
     const [isOpen, setIsOpen] = useState(false)
     return (
         <div className="navbar">
-        <div className="nav_logo"> Quimbaya </div>
+        <div className="nav_logo">MATEO HERNANDEZ MORENO </div>
         <div className={`nav_items ${isOpen && "open"}`}>
             <a href="#inicio"> INICIO</a>
             <a href="#about">ABOUT US</a>
